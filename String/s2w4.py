@@ -24,11 +24,13 @@ def get_concept_by_number(text, concept_number):
     while concept_count < n:
         start_location = text.find('TITLE:')
         end_location = text.find('TITLE:',start_location+1)
-        
-        concept_count = concept_count+1
-    return text[start_location:end_location]
-    
-    #return text[:title_location]
+        if end_location == -1:
+            current_text = text[start_location:]
+            break
+        current_text = text[start_location:end_location]
+        text = text[end_location:]
+        concept_count = concept_count + 1
+    return current_text
 
 # you'll know you've solved the problem when the code below
 # prints:
