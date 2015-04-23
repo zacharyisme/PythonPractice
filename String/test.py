@@ -85,9 +85,16 @@
 # print biggest(8,11,10)
 
 ##Defind print numbers
-def print_num(n):
-	i = 0
-	while i != n:
-		i = i+1
-		print i
-print_num(0)
+# def print_num(n):
+# 	i = 0
+# 	while i != n:
+# 		i = i+1
+# 		print i
+# print_num(0)
+
+##Days in Month (List practice)
+days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
+def how_many_days(month):
+	days = days_in_month[month-1]
+	return days
+print how_many_days(2)
