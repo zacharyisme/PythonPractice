@@ -11,7 +11,7 @@ DESCRIPTION: The phrase "computers are stupid" refers
 to how they interpret instructions literally. This 
 means that small typos can cause big problems.
 TITLE: Python
-DESCRIPTION: Python is a "programming language." It 
+DESCRIPTION:Python is a "programming language." It 
 provides programmers a way to write instructions for a 
 computer to execute in a way that the computer can understand.
 TITLE: While Loops
