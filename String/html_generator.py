@@ -1,11 +1,11 @@
 def generate_concept_HTML(concept_title, concept_description):
     html_text_1 = '''
 <div class="concept">
-    <div class="concept-title">
+    <h3>
         ''' + concept_title
     html_text_2 = '''
-    </div>
-    <div class="concept-description">
+    </h3>
+    <div class="des_concept">
         ''' + concept_description
     html_text_3 = '''
     </div>

@@ -10,6 +10,8 @@ def generate_concept_HTML(concept_title, concept_description):
     html_text_3 = '''
     </div>
 </div>'''
+    all_html = html_text_1 + html_text_2 + html_text_3
+    return all_html
 
 def make_HTML(concept):
 	concept_title = concept[0]
@@ -21,7 +23,7 @@ my_list = [ ['Python', 'Python is a Programming Language'],
                              ['Lists', 'Lists are sequences of data'] ]
 
 def make_HTML_from_concepts(concepts_list):
-	html = []
+	html = ''
 	for i in concepts_list:
 		concept_html = make_HTML(i)
 		html = html + concept_html
