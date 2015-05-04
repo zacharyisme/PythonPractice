@@ -39,6 +39,18 @@ def get_concept_by_number(text, concept_number):
         text = text[next_concept_end:]
     return concept
 
+TEST_TEXT = """TITLE: Why Computers are Stupid
+DESCRIPTION: The phrase "computers are stupid" refers 
+to how they interpret instructions literally. This 
+means that small typos can cause big problems.
+TITLE: Python
+DESCRIPTION: Python is a "programming language." It 
+provides programmers a way to write instructions for a 
+computer to execute in a way that the computer can understand.
+TITLE: While Loops
+DESCRIPTION: A while loop repeatedly executes the body of
+the loop until the "test condition" is no longer true."""
+
 def generate_all_html(text):
     current_concept_number = 1
     concept = get_concept_by_number(text, current_concept_number)
