@@ -93,8 +93,12 @@
 # print_num(0)
 
 ##Days in Month (List practice)
-days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
-def how_many_days(month):
-	days = days_in_month[month-1]
-	return days
-print how_many_days(2)
+# days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
+# def how_many_days(month):
+# 	days = days_in_month[month-1]
+# 	return days
+# print how_many_days(2)
+
+name = input("Please enter your name:")
+SayHi = "Hi " + name
+print SayHi
